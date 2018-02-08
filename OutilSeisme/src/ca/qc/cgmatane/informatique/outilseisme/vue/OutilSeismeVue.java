@@ -22,12 +22,10 @@ public class OutilSeismeVue extends Application{
 
 	@Override
 	public void start(Stage scenePrincipal){
-		StackPane racine = new StackPane();
-		scenePrincipal.setScene(new Scene(racine, largeurFenetre, hauteurFenetre));
-		scenePrincipal.setTitle(nomFenetre);
 		panneauOnglets = new TabPane();
+		scenePrincipal.setScene(new Scene(panneauOnglets, largeurFenetre, hauteurFenetre));
+		scenePrincipal.setTitle(nomFenetre);
 		creerOnglet(2);
-		racine.getChildren().add(panneauOnglets);
 		scenePrincipal.show();
 	}
 
