@@ -1,17 +1,42 @@
 package ca.qc.cgmatane.informatique.outilseisme.action;
 
+import java.util.ArrayList;
+import java.util.List;
+
+import ca.qc.cgmatane.informatique.outilseisme.vue.OutilSeismeVue;
+
 public class OutilSeismeControleur {
-	/*
-	public void afficherMenu(texte, page){
+	protected OutilSeismeVue vue;
 
+	public OutilSeismeControleur(OutilSeismeVue vue){
+		this.vue = vue;
+		vue.afficherMenu("Mondial", 0);
+		vue.afficherMenu("Brazil", 1);
+		vue.afficherMenu("Réunion", 2);
+		vue.afficherMenu("Haiti", 3);
+
+		List<String> listeMondial = new ArrayList<String>();
+		listeMondial.add("Ligne 1");
+		listeMondial.add("Ligne 2");
+		listeMondial.add("Ligne 3");
+		vue.afficherListe(listeMondial, 0);
+
+		List<String> listeBrazil = new ArrayList<String>();
+		listeBrazil.add("Ligne 1");
+		listeBrazil.add("Ligne 2");
+		listeBrazil.add("Ligne 3");
+		vue.afficherListe(listeBrazil, 1);
+
+		List<String> listeReunion = new ArrayList<String>();
+		listeBrazil.add("Ligne 1");
+		listeBrazil.add("Ligne 2");
+		listeBrazil.add("Ligne 3");
+		vue.afficherListe(listeReunion, 2);
+
+		List<String> listeHaiti = new ArrayList<String>();
+		listeBrazil.add("Ligne 1");
+		listeBrazil.add("Ligne 2");
+		listeBrazil.add("Ligne 3");
+		vue.afficherListe(listeHaiti, 3);
 	}
-
-	public void afficherListe(liste, page){
-
-	}
-
-	public void afficherPagination(listeNumeros){
-
-	}
-	*/
 }
