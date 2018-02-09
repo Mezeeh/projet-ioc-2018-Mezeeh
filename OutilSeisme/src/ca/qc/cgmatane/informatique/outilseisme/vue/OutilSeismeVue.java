@@ -7,6 +7,8 @@ import javafx.application.Application;
 import javafx.scene.Scene;
 import javafx.scene.control.Tab;
 import javafx.scene.control.TabPane;
+import javafx.scene.text.Text;
+import javafx.scene.text.TextFlow;
 import javafx.stage.Stage;
 
 public class OutilSeismeVue extends Application{
@@ -16,6 +18,7 @@ public class OutilSeismeVue extends Application{
 	protected TabPane onglets;
 	protected Tab[] onglet = new Tab[6];
 	protected OutilSeismeControleur controleur;
+	protected TextFlow textes;
 
 	@Override
 	public void start(Stage scenePrincipal){
@@ -34,7 +37,13 @@ public class OutilSeismeVue extends Application{
 	}
 
 	public void afficherListe(List<String> liste, int page){
-		System.out.println("test");
+		textes = new TextFlow();
+
+		for (String informations : liste) {
+			textes.getChildren().add(new Text(informations + "\n"));
+		}
+
+		onglet[page].setContent(textes);
 	}
 
 	/*public void afficherPagination(listeNumeros){

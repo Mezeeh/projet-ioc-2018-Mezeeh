@@ -28,15 +28,15 @@ public class OutilSeismeControleur {
 		vue.afficherListe(listeBrazil, 1);
 
 		List<String> listeReunion = new ArrayList<String>();
-		listeBrazil.add("Ligne 1");
-		listeBrazil.add("Ligne 2");
-		listeBrazil.add("Ligne 3");
+		listeReunion.add("Ligne 1");
+		listeReunion.add("Ligne 2");
+		listeReunion.add("Ligne 3");
 		vue.afficherListe(listeReunion, 2);
 
 		List<String> listeHaiti = new ArrayList<String>();
-		listeBrazil.add("Ligne 1");
-		listeBrazil.add("Ligne 2");
-		listeBrazil.add("Ligne 3");
+		listeHaiti.add("Ligne 1");
+		listeHaiti.add("Ligne 2");
+		listeHaiti.add("Ligne 3");
 		vue.afficherListe(listeHaiti, 3);
 	}
 }
