@@ -18,13 +18,16 @@ public class OutilSeismeVue extends Application{
 	protected TabPane onglets;
 	protected Tab[] onglet = new Tab[6];
 	protected OutilSeismeControleur controleur;
-	protected TextFlow textes;
+	protected TextFlow[] textesFlow = new TextFlow[6];
 
 	@Override
 	public void start(Stage scenePrincipal){
 		onglets = new TabPane();
-		for(int compteur = 0; compteur < onglet.length; compteur++)
-			onglet[compteur] = new Tab();
+		for(int compteurOnglet = 0; compteurOnglet < onglet.length; compteurOnglet++)
+			onglet[compteurOnglet] = new Tab();
+		// TEMP
+		for(int compteurTextesFlow = 0; compteurTextesFlow < onglet.length; compteurTextesFlow++)
+			textesFlow[compteurTextesFlow] = new TextFlow();
 		scenePrincipal.setScene(new Scene(onglets, largeurFenetre, hauteurFenetre));
 		scenePrincipal.setTitle(nomFenetre);
 		scenePrincipal.show();
@@ -38,13 +41,11 @@ public class OutilSeismeVue extends Application{
 	}
 
 	public void afficherListe(List<String> liste, int page){
-		textes = new TextFlow();
-
 		for (String informations : liste) {
-			textes.getChildren().add(new Text(informations + "\n"));
+			textesFlow[page].getChildren().add(new Text(informations + "\n"));
 		}
 
-		onglet[page].setContent(textes);
+		onglet[page].setContent(textesFlow[page]);
 	}
 
 	/*public void afficherPagination(listeNumeros){
