@@ -23,14 +23,15 @@ public class OutilSeismeVue extends Application{
 	@Override
 	public void start(Stage scenePrincipal){
 		onglets = new TabPane();
-		controleur = new OutilSeismeControleur(this);
+		for(int compteur = 0; compteur < onglet.length; compteur++)
+			onglet[compteur] = new Tab();
 		scenePrincipal.setScene(new Scene(onglets, largeurFenetre, hauteurFenetre));
 		scenePrincipal.setTitle(nomFenetre);
 		scenePrincipal.show();
+		controleur = new OutilSeismeControleur(this);
 	}
 
 	public void afficherMenu(String texte, int page){
-		onglet[page] = new Tab();
 		onglet[page].setText(texte);
 		onglet[page].setClosable(false);
 		onglets.getTabs().add(onglet[page]);
