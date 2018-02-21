@@ -14,19 +14,19 @@
 		<property name="sourceList">
 			<list>
 				<bean class="ca.qc.cgmatane.informatique.outilseisme.modele.Ville">
-			       <property name="nom" value="San Francisco"/>
+			       <property name="nom" value="Hatillo"/>
 			   </bean>
 				<bean class="ca.qc.cgmatane.informatique.outilseisme.modele.Ville">
-			       <property name="nom" value="Istanbul"/>
+			       <property name="nom" value="Punta Cana"/>
 			   </bean>
 			   <bean class="ca.qc.cgmatane.informatique.outilseisme.modele.Ville">
-			       <property name="nom" value="Seattle"/>
+			       <property name="nom" value="Road Town"/>
 			   </bean>
 			   <bean class="ca.qc.cgmatane.informatique.outilseisme.modele.Ville">
-			       <property name="nom" value="Tokyo"/>
+			       <property name="nom" value="San Antonio"/>
 			   </bean>
 			   <bean class="ca.qc.cgmatane.informatique.outilseisme.modele.Ville">
-			       <property name="nom" value="Los Angeles"/>
+			       <property name="nom" value="San Juan"/>
 			   </bean>
 			</list>
 		</property>

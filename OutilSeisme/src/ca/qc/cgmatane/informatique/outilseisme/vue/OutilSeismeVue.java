@@ -2,7 +2,7 @@ package ca.qc.cgmatane.informatique.outilseisme.vue;
 
 import java.util.List;
 
-import ca.qc.cgmatane.informatique.outilseisme.action.OutilSeismeControleur;
+import ca.qc.cgmatane.informatique.outilseisme.action.Controleur;
 import javafx.application.Application;
 import javafx.scene.Scene;
 import javafx.scene.control.Tab;
@@ -17,7 +17,7 @@ public class OutilSeismeVue extends Application{
 	private String nomFenetre = "Outil de seisme";
 	protected TabPane onglets;
 	protected Tab[] onglet = new Tab[6];
-	protected OutilSeismeControleur controleur;
+	protected Controleur controleur;
 	protected TextFlow[] textesFlow = new TextFlow[6];
 
 	@Override
@@ -31,7 +31,7 @@ public class OutilSeismeVue extends Application{
 		scenePrincipal.setScene(new Scene(onglets, largeurFenetre, hauteurFenetre));
 		scenePrincipal.setTitle(nomFenetre);
 		scenePrincipal.show();
-		controleur = new OutilSeismeControleur(this);
+		controleur = new Controleur(this);
 	}
 
 	public void afficherMenu(String texte, int page){
