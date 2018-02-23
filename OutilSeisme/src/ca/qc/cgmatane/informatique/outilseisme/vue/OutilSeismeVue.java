@@ -3,6 +3,7 @@ package ca.qc.cgmatane.informatique.outilseisme.vue;
 import java.util.List;
 
 import ca.qc.cgmatane.informatique.outilseisme.action.Controleur;
+import ca.qc.cgmatane.informatique.outilseisme.modele.ListeString;
 import javafx.application.Application;
 import javafx.scene.Scene;
 import javafx.scene.control.Tab;
@@ -40,10 +41,9 @@ public class OutilSeismeVue extends Application{
 		onglets.getTabs().add(onglet[page]);
 	}
 
-	public void afficherListe(List<String> liste, int page){
-		for (String informations : liste) {
-			textesFlow[page].getChildren().add(new Text(informations + "\n"));
-		}
+	public void afficherListe(ListeString liste, int page){
+		for(int index = 0; index < liste.getTaille(); index++)
+			textesFlow[page].getChildren().add(new Text(liste.rechercher(index) + "\n"));
 
 		onglet[page].setContent(textesFlow[page]);
 	}

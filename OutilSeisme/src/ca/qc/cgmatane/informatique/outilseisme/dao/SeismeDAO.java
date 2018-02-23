@@ -19,11 +19,13 @@ import org.w3c.dom.Element;
 import org.w3c.dom.NodeList;
 import org.xml.sax.SAXException;
 
+import ca.qc.cgmatane.informatique.outilseisme.modele.ListeString;
+
 public class SeismeDAO {
 
-	protected List<String> informations;
-	
-	public List<String> rechercherInformationsVille(String nomVille){
+	protected ListeString informations;
+
+	public ListeString rechercherInformationsVille(String nomVille){
 		if(nomVille.contains(" "))
 			nomVille = nomVille.replaceAll(" ", "%20");
 
@@ -31,7 +33,7 @@ public class SeismeDAO {
 		String xmlTremblementsVille = "";
 		String informationVille = "";
 
-		informations = new ArrayList<String>();
+		informations = new ListeString();
 
 		try {
 			URL urlTremblementsVille = new URL(adresseTremblementsVille);
@@ -72,7 +74,7 @@ public class SeismeDAO {
 				if(null != magnitude) informationVille += " | Magnitude : " + magnitude;
 				if(null != location) informationVille += " | Location : " + location;
 
-				informations.add(informationVille);
+				informations.ajouter(informationVille);
 			}
 		} catch (SAXException e) {
 			e.printStackTrace();
@@ -85,12 +87,12 @@ public class SeismeDAO {
 		return informations;
 	}
 
-	public List<String> rechercherInformationMondial(){
+	public ListeString rechercherInformationMondial(){
 		String adresseTremblementsMondial = "https://earthquake.usgs.gov/fdsnws/event/1/query?format=xml&starttime=2017-01-25&endtime=2017-01-30";
 		String xmlTremblementsMondial = "";
 		String informationMondial = "";
 
-		informations = new ArrayList<String>();
+		informations = new ListeString();
 
 		try {
 			URL urlTremblementsMondial = new URL(adresseTremblementsMondial);
@@ -131,7 +133,7 @@ public class SeismeDAO {
 				if(null != depth) informationMondial += " | Profondeur : " + depth;
 				if(null != coordonnees) informationMondial += " | Location : " + coordonnees;
 
-				informations.add(informationMondial);
+				informations.ajouter(informationMondial);
 			}
 		} catch (SAXException e) {
 			e.printStackTrace();
