@@ -26,11 +26,11 @@ public class Controleur {
 
 		mondial = new Mondial();
 		vue.afficherMenu(mondial.getNom(), 0);
-		vue.afficherListe(seismeDAO.rechercheInformationMondial(), 0);
+		vue.afficherListe(seismeDAO.rechercherInformationMondial(), 0);
 
 		for(int indexVille = 0; indexVille < listeDeVilles.getListeVilles().size(); indexVille++){
 			vue.afficherMenu(listeDeVilles.getListeVilles().get(indexVille).getNom().toString(), indexVille + 1);
-			vue.afficherListe(seismeDAO.rechercheInformationsVille(listeDeVilles.getListeVilles().get(indexVille).getNom().toString()), indexVille + 1);
+			vue.afficherListe(seismeDAO.rechercherInformationsVille(listeDeVilles.getListeVilles().get(indexVille).getNom().toString()), indexVille + 1);
 		}
 	}
 }

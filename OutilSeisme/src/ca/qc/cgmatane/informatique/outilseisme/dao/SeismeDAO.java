@@ -21,7 +21,9 @@ import org.xml.sax.SAXException;
 
 public class SeismeDAO {
 
-	public List<String> rechercheInformationsVille(String nomVille){
+	protected List<String> informations;
+	
+	public List<String> rechercherInformationsVille(String nomVille){
 		if(nomVille.contains(" "))
 			nomVille = nomVille.replaceAll(" ", "%20");
 
@@ -29,7 +31,7 @@ public class SeismeDAO {
 		String xmlTremblementsVille = "";
 		String informationVille = "";
 
-		List<String> informations = new ArrayList<String>();
+		informations = new ArrayList<String>();
 
 		try {
 			URL urlTremblementsVille = new URL(adresseTremblementsVille);
@@ -65,7 +67,7 @@ public class SeismeDAO {
 				location = null != location ? location.substring(location.indexOf(" ") + 2, location.length() - 1) : null;
 
 				//System.out.println(null != location ? region + " | Profondeur : " + depth + " | Magnitude : " + magnitude + " | Location : " + location : region + " | Profondeur : " + depth + " | Magnitude : " + magnitude);
-				if(null != region) informationVille += region;
+				if(null != region) informationVille += region.substring(0, region.indexOf("of") - 1);
 				if(null != depth) informationVille += " | Profondeur : " + depth;
 				if(null != magnitude) informationVille += " | Magnitude : " + magnitude;
 				if(null != location) informationVille += " | Location : " + location;
@@ -83,12 +85,12 @@ public class SeismeDAO {
 		return informations;
 	}
 
-	public List<String> rechercheInformationMondial(){
+	public List<String> rechercherInformationMondial(){
 		String adresseTremblementsMondial = "https://earthquake.usgs.gov/fdsnws/event/1/query?format=xml&starttime=2017-01-25&endtime=2017-01-30";
 		String xmlTremblementsMondial = "";
 		String informationMondial = "";
 
-		List<String> informations = new ArrayList<String>();
+		informations = new ArrayList<String>();
 
 		try {
 			URL urlTremblementsMondial = new URL(adresseTremblementsMondial);

@@ -12,8 +12,8 @@ import javafx.scene.text.TextFlow;
 import javafx.stage.Stage;
 
 public class OutilSeismeVue extends Application{
-	private int hauteurFenetre = 400;
-	private int largeurFenetre = 600;
+	private int largeurFenetre = 800;
+	private int hauteurFenetre = 600;
 	private String nomFenetre = "Outil de seisme";
 	protected TabPane onglets;
 	protected Tab[] onglet = new Tab[6];
