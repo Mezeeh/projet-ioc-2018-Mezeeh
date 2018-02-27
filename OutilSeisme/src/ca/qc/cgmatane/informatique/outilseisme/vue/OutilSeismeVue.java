@@ -9,6 +9,9 @@ import javafx.scene.Scene;
 import javafx.scene.control.Tab;
 import javafx.scene.control.TabPane;
 import javafx.scene.image.Image;
+import javafx.scene.image.ImageView;
+import javafx.scene.layout.VBox;
+import javafx.scene.shape.Circle;
 import javafx.scene.text.Text;
 import javafx.scene.text.TextFlow;
 import javafx.stage.Stage;
@@ -40,6 +43,7 @@ public class OutilSeismeVue extends Application{
 	public void afficherMenu(String texte, int page){
 		onglet[page].setText(texte);
 		onglet[page].setClosable(false);
+		onglet[page].setGraphic(new ImageView(new Image("Mondial" == texte ? "file:mondial-icon.png" : "file:ville-icon.png", 15, 15, true, true)));
 		onglets.getTabs().add(onglet[page]);
 	}
 
