@@ -8,6 +8,7 @@ import javafx.application.Application;
 import javafx.scene.Scene;
 import javafx.scene.control.Tab;
 import javafx.scene.control.TabPane;
+import javafx.scene.image.Image;
 import javafx.scene.text.Text;
 import javafx.scene.text.TextFlow;
 import javafx.stage.Stage;
@@ -31,6 +32,7 @@ public class OutilSeismeVue extends Application{
 			textesFlow[compteurTextesFlow] = new TextFlow();
 		scenePrincipal.setScene(new Scene(onglets, largeurFenetre, hauteurFenetre));
 		scenePrincipal.setTitle(nomFenetre);
+		scenePrincipal.getIcons().add(new Image("file:seisme-icon.png"));
 		scenePrincipal.show();
 		controleur = new Controleur(this);
 	}
