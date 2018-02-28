@@ -1,11 +1,14 @@
 package ca.qc.cgmatane.informatique.outilseisme.action;
 
+import java.util.List;
+
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 import ca.qc.cgmatane.informatique.outilseisme.dao.SeismeDAO;
 import ca.qc.cgmatane.informatique.outilseisme.modele.ListeDeVilles;
 import ca.qc.cgmatane.informatique.outilseisme.modele.Mondial;
+import ca.qc.cgmatane.informatique.outilseisme.modele.Ville;
 import ca.qc.cgmatane.informatique.outilseisme.vue.OutilSeismeVue;
 
 public class Controleur {
@@ -14,6 +17,7 @@ public class Controleur {
 	protected SeismeDAO seismeDAO;
 	protected ListeDeVilles listeDeVilles;
 	protected Mondial mondial;
+	protected List<Ville> tableauVille ;
 
 	public Controleur(OutilSeismeVue vue){
 		this.vue = vue;
@@ -27,10 +31,12 @@ public class Controleur {
 		mondial = new Mondial();
 		vue.afficherMenu(mondial.getNom(), 0);
 		vue.afficherListe(seismeDAO.rechercherInformationMondial(), 0);
+		
+		tableauVille = listeDeVilles.getListeVilles();
 
-		for(int indexVille = 0; indexVille < listeDeVilles.getListeVilles().size(); indexVille++){
-			vue.afficherMenu(listeDeVilles.getListeVilles().get(indexVille).getNom().toString(), indexVille + 1);
-			vue.afficherListe(seismeDAO.rechercherInformationsVille(listeDeVilles.getListeVilles().get(indexVille).getNom().toString()), indexVille + 1);
+		for(int indexVille = 0; indexVille < tableauVille.size(); indexVille++){
+			vue.afficherMenu(tableauVille.get(indexVille).getNom().toString(), indexVille + 1);
+			vue.afficherListe(seismeDAO.rechercherInformationsVille(tableauVille.get(indexVille).getNom().toString()), indexVille + 1);
 		}
 	}
 }
