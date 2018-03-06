@@ -1,5 +1,6 @@
 package ca.qc.cgmatane.informatique.outilseisme.vue;
 
+import java.awt.Button;
 import java.util.List;
 
 import ca.qc.cgmatane.informatique.outilseisme.action.Controleur;
@@ -17,8 +18,8 @@ import javafx.scene.text.TextFlow;
 import javafx.stage.Stage;
 
 public class OutilSeismeVue extends Application{
-	private int largeurFenetre = 800;
-	private int hauteurFenetre = 600;
+	private int largeurFenetre = 700;
+	private int hauteurFenetre = 450;
 	private String nomFenetre = "Outil de seisme";
 	protected TabPane onglets;
 	protected Tab[] onglet = new Tab[6];
@@ -33,6 +34,7 @@ public class OutilSeismeVue extends Application{
 		// TEMP
 		for(int compteurTextesFlow = 0; compteurTextesFlow < onglet.length; compteurTextesFlow++)
 			textesFlow[compteurTextesFlow] = new TextFlow();
+
 		scenePrincipal.setScene(new Scene(onglets, largeurFenetre, hauteurFenetre));
 		scenePrincipal.setTitle(nomFenetre);
 		scenePrincipal.getIcons().add(new Image("file:seisme-icon.png"));
@@ -48,13 +50,19 @@ public class OutilSeismeVue extends Application{
 	}
 
 	public void afficherListe(ListeString liste, int page){
-		for(int index = 0; index < liste.getTaille(); index++)
-			textesFlow[page].getChildren().add(new Text(liste.rechercher(index) + "\n"));
+		/*for(int index = 0; index < liste.getTaille(); index++)
+			textesFlow[page].getChildren().add(new Text(liste.rechercher(index) + "\n"));*/
+
+		ListeString.VisiteurString visiteur = liste.getVisiteur();
+
+		while(!visiteur.estFini()){
+			textesFlow[page].getChildren().add(new Text(visiteur.visiterSuivant() + "\n"));
+		}
 
 		onglet[page].setContent(textesFlow[page]);
 	}
 
-	/*public void afficherPagination(listeNumeros){
+	public void afficherPagination(List<Integer> listeNumeros){
 
-	}*/
+	}
 }

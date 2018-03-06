@@ -85,4 +85,26 @@ public class ListeString {
 		}
 		return null;
 	}
+
+	public ListeString.VisiteurString getVisiteur(){
+		return new VisiteurString(this.tete);
+	}
+
+	public class VisiteurString implements Visitable{
+		protected NoeudString noeud;
+
+		public VisiteurString(NoeudString premierNoeud){
+			this.noeud = premierNoeud;
+		}
+
+		public String visiterSuivant(){
+			String texte = noeud.getString();
+			noeud = noeud.getSuivant();
+			return texte;
+		}
+
+		public boolean estFini(){
+			return null == noeud;
+		}
+	}
 }
