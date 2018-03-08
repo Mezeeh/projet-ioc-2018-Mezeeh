@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="JAVA_MODULE" version="4">
+  <component name="EclipseModuleManager">
+    <libelement value="jar://$MODULE_DIR$/../../../lib/spring/spring-aop-4.3.6.RELEASE.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/../../../lib/spring/spring-aspects-4.3.6.RELEASE.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/../../../lib/spring/spring-beans-4.3.6.RELEASE.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/../../../lib/spring/spring-boot-1.2.3.RELEASE.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/../../../lib/spring/spring-context-4.3.6.RELEASE.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/../../../lib/spring/spring-context-support-4.3.6.RELEASE.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/../../../lib/spring/spring-core-4.3.6.RELEASE.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/../../../lib/spring/spring-expression-4.3.6.RELEASE.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/../../../lib/spring/spring-instrument-4.3.6.RELEASE.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/../../../lib/spring/spring-instrument-tomcat-4.3.6.RELEASE.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/../../../lib/spring/spring-jdbc-4.3.6.RELEASE.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/../../../lib/spring/spring-jms-4.3.6.RELEASE.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/../../../lib/spring/spring-messaging-4.3.6.RELEASE.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/../../../lib/spring/spring-orm-4.3.6.RELEASE.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/../../../lib/spring/spring-oxm-4.3.6.RELEASE.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/../../../lib/spring/spring-test-4.3.6.RELEASE.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/../../../lib/spring/spring-tx-4.3.6.RELEASE.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/../../../lib/spring/spring-web-4.3.6.RELEASE.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/../../../lib/spring/spring-webmvc-4.3.6.RELEASE.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/../../../lib/spring/spring-webmvc-portlet-4.3.6.RELEASE.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/../../../lib/spring/spring-websocket-4.3.6.RELEASE.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/../../../lib/logging/commons-logging-1.2.jar!/" />
+    <src_description expected_position="0">
+      <src_folder value="file://$MODULE_DIR$/src" expected_position="0" />
+    </src_description>
+  </component>
+  <component name="NewModuleRootManager">
+    <output url="file://$MODULE_DIR$/bin" />
+    <exclude-output />
+    <content url="file://$MODULE_DIR$">
+      <sourceFolder url="file://$MODULE_DIR$/src" isTestSource="false" />
+    </content>
+    <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="jdk" jdkName="JavaSE-1.8" jdkType="JavaSDK" />
+    <orderEntry type="module-library">
+      <library name="spring-aop-4.3.6.RELEASE.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/../../../lib/spring/spring-aop-4.3.6.RELEASE.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="spring-aspects-4.3.6.RELEASE.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/../../../lib/spring/spring-aspects-4.3.6.RELEASE.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="spring-beans-4.3.6.RELEASE.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/../../../lib/spring/spring-beans-4.3.6.RELEASE.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="spring-boot-1.2.3.RELEASE.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/../../../lib/spring/spring-boot-1.2.3.RELEASE.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="spring-context-4.3.6.RELEASE.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/../../../lib/spring/spring-context-4.3.6.RELEASE.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="spring-context-support-4.3.6.RELEASE.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/../../../lib/spring/spring-context-support-4.3.6.RELEASE.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="spring-core-4.3.6.RELEASE.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/../../../lib/spring/spring-core-4.3.6.RELEASE.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="spring-expression-4.3.6.RELEASE.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/../../../lib/spring/spring-expression-4.3.6.RELEASE.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="spring-instrument-4.3.6.RELEASE.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/../../../lib/spring/spring-instrument-4.3.6.RELEASE.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="spring-instrument-tomcat-4.3.6.RELEASE.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/../../../lib/spring/spring-instrument-tomcat-4.3.6.RELEASE.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="spring-jdbc-4.3.6.RELEASE.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/../../../lib/spring/spring-jdbc-4.3.6.RELEASE.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="spring-jms-4.3.6.RELEASE.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/../../../lib/spring/spring-jms-4.3.6.RELEASE.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="spring-messaging-4.3.6.RELEASE.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/../../../lib/spring/spring-messaging-4.3.6.RELEASE.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="spring-orm-4.3.6.RELEASE.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/../../../lib/spring/spring-orm-4.3.6.RELEASE.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="spring-oxm-4.3.6.RELEASE.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/../../../lib/spring/spring-oxm-4.3.6.RELEASE.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="spring-test-4.3.6.RELEASE.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/../../../lib/spring/spring-test-4.3.6.RELEASE.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="spring-tx-4.3.6.RELEASE.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/../../../lib/spring/spring-tx-4.3.6.RELEASE.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="spring-web-4.3.6.RELEASE.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/../../../lib/spring/spring-web-4.3.6.RELEASE.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="spring-webmvc-4.3.6.RELEASE.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/../../../lib/spring/spring-webmvc-4.3.6.RELEASE.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="spring-webmvc-portlet-4.3.6.RELEASE.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/../../../lib/spring/spring-webmvc-portlet-4.3.6.RELEASE.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="spring-websocket-4.3.6.RELEASE.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/../../../lib/spring/spring-websocket-4.3.6.RELEASE.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="commons-logging-1.2.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/../../../lib/logging/commons-logging-1.2.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+  </component>
+</module>
