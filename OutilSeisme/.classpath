@@ -6,27 +6,27 @@
 			<accessrule kind="accessible" pattern="javafx/**"/>
 		</accessrules>
 	</classpathentry>
-	<classpathentry kind="lib" path="C:/Users/1643216/Desktop/Structures de données/lib/spring/spring-aop-4.3.6.RELEASE.jar"/>
-	<classpathentry kind="lib" path="C:/Users/1643216/Desktop/Structures de données/lib/spring/spring-aspects-4.3.6.RELEASE.jar"/>
-	<classpathentry kind="lib" path="C:/Users/1643216/Desktop/Structures de données/lib/spring/spring-beans-4.3.6.RELEASE.jar"/>
-	<classpathentry kind="lib" path="C:/Users/1643216/Desktop/Structures de données/lib/spring/spring-boot-1.2.3.RELEASE.jar"/>
-	<classpathentry kind="lib" path="C:/Users/1643216/Desktop/Structures de données/lib/spring/spring-context-4.3.6.RELEASE.jar"/>
-	<classpathentry kind="lib" path="C:/Users/1643216/Desktop/Structures de données/lib/spring/spring-context-support-4.3.6.RELEASE.jar"/>
-	<classpathentry kind="lib" path="C:/Users/1643216/Desktop/Structures de données/lib/spring/spring-core-4.3.6.RELEASE.jar"/>
-	<classpathentry kind="lib" path="C:/Users/1643216/Desktop/Structures de données/lib/spring/spring-expression-4.3.6.RELEASE.jar"/>
-	<classpathentry kind="lib" path="C:/Users/1643216/Desktop/Structures de données/lib/spring/spring-instrument-4.3.6.RELEASE.jar"/>
-	<classpathentry kind="lib" path="C:/Users/1643216/Desktop/Structures de données/lib/spring/spring-instrument-tomcat-4.3.6.RELEASE.jar"/>
-	<classpathentry kind="lib" path="C:/Users/1643216/Desktop/Structures de données/lib/spring/spring-jdbc-4.3.6.RELEASE.jar"/>
-	<classpathentry kind="lib" path="C:/Users/1643216/Desktop/Structures de données/lib/spring/spring-jms-4.3.6.RELEASE.jar"/>
-	<classpathentry kind="lib" path="C:/Users/1643216/Desktop/Structures de données/lib/spring/spring-messaging-4.3.6.RELEASE.jar"/>
-	<classpathentry kind="lib" path="C:/Users/1643216/Desktop/Structures de données/lib/spring/spring-orm-4.3.6.RELEASE.jar"/>
-	<classpathentry kind="lib" path="C:/Users/1643216/Desktop/Structures de données/lib/spring/spring-oxm-4.3.6.RELEASE.jar"/>
-	<classpathentry kind="lib" path="C:/Users/1643216/Desktop/Structures de données/lib/spring/spring-test-4.3.6.RELEASE.jar"/>
-	<classpathentry kind="lib" path="C:/Users/1643216/Desktop/Structures de données/lib/spring/spring-tx-4.3.6.RELEASE.jar"/>
-	<classpathentry kind="lib" path="C:/Users/1643216/Desktop/Structures de données/lib/spring/spring-web-4.3.6.RELEASE.jar"/>
-	<classpathentry kind="lib" path="C:/Users/1643216/Desktop/Structures de données/lib/spring/spring-webmvc-4.3.6.RELEASE.jar"/>
-	<classpathentry kind="lib" path="C:/Users/1643216/Desktop/Structures de données/lib/spring/spring-webmvc-portlet-4.3.6.RELEASE.jar"/>
-	<classpathentry kind="lib" path="C:/Users/1643216/Desktop/Structures de données/lib/spring/spring-websocket-4.3.6.RELEASE.jar"/>
-	<classpathentry kind="lib" path="C:/Users/1643216/Desktop/Structures de données/lib/logging/commons-logging-1.2.jar"/>
+	<classpathentry kind="lib" path="C:/Users/1643216/Desktop/Structures de données/App Projet IoC/projet-ioc-2018-Mezeeh/OutilSeisme/lib/spring/spring-aop-4.3.6.RELEASE.jar"/>
+	<classpathentry kind="lib" path="C:/Users/1643216/Desktop/Structures de données/App Projet IoC/projet-ioc-2018-Mezeeh/OutilSeisme/lib/spring/spring-aspects-4.3.6.RELEASE.jar"/>
+	<classpathentry kind="lib" path="C:/Users/1643216/Desktop/Structures de données/App Projet IoC/projet-ioc-2018-Mezeeh/OutilSeisme/lib/spring/spring-beans-4.3.6.RELEASE.jar"/>
+	<classpathentry kind="lib" path="C:/Users/1643216/Desktop/Structures de données/App Projet IoC/projet-ioc-2018-Mezeeh/OutilSeisme/lib/spring/spring-boot-1.2.3.RELEASE.jar"/>
+	<classpathentry kind="lib" path="C:/Users/1643216/Desktop/Structures de données/App Projet IoC/projet-ioc-2018-Mezeeh/OutilSeisme/lib/spring/spring-context-4.3.6.RELEASE.jar"/>
+	<classpathentry kind="lib" path="C:/Users/1643216/Desktop/Structures de données/App Projet IoC/projet-ioc-2018-Mezeeh/OutilSeisme/lib/spring/spring-context-support-4.3.6.RELEASE.jar"/>
+	<classpathentry kind="lib" path="C:/Users/1643216/Desktop/Structures de données/App Projet IoC/projet-ioc-2018-Mezeeh/OutilSeisme/lib/spring/spring-core-4.3.6.RELEASE.jar"/>
+	<classpathentry kind="lib" path="C:/Users/1643216/Desktop/Structures de données/App Projet IoC/projet-ioc-2018-Mezeeh/OutilSeisme/lib/spring/spring-expression-4.3.6.RELEASE.jar"/>
+	<classpathentry kind="lib" path="C:/Users/1643216/Desktop/Structures de données/App Projet IoC/projet-ioc-2018-Mezeeh/OutilSeisme/lib/spring/spring-instrument-4.3.6.RELEASE.jar"/>
+	<classpathentry kind="lib" path="C:/Users/1643216/Desktop/Structures de données/App Projet IoC/projet-ioc-2018-Mezeeh/OutilSeisme/lib/spring/spring-instrument-tomcat-4.3.6.RELEASE.jar"/>
+	<classpathentry kind="lib" path="C:/Users/1643216/Desktop/Structures de données/App Projet IoC/projet-ioc-2018-Mezeeh/OutilSeisme/lib/spring/spring-jdbc-4.3.6.RELEASE.jar"/>
+	<classpathentry kind="lib" path="C:/Users/1643216/Desktop/Structures de données/App Projet IoC/projet-ioc-2018-Mezeeh/OutilSeisme/lib/spring/spring-jms-4.3.6.RELEASE.jar"/>
+	<classpathentry kind="lib" path="C:/Users/1643216/Desktop/Structures de données/App Projet IoC/projet-ioc-2018-Mezeeh/OutilSeisme/lib/spring/spring-messaging-4.3.6.RELEASE.jar"/>
+	<classpathentry kind="lib" path="C:/Users/1643216/Desktop/Structures de données/App Projet IoC/projet-ioc-2018-Mezeeh/OutilSeisme/lib/spring/spring-orm-4.3.6.RELEASE.jar"/>
+	<classpathentry kind="lib" path="C:/Users/1643216/Desktop/Structures de données/App Projet IoC/projet-ioc-2018-Mezeeh/OutilSeisme/lib/spring/spring-oxm-4.3.6.RELEASE.jar"/>
+	<classpathentry kind="lib" path="C:/Users/1643216/Desktop/Structures de données/App Projet IoC/projet-ioc-2018-Mezeeh/OutilSeisme/lib/spring/spring-test-4.3.6.RELEASE.jar"/>
+	<classpathentry kind="lib" path="C:/Users/1643216/Desktop/Structures de données/App Projet IoC/projet-ioc-2018-Mezeeh/OutilSeisme/lib/spring/spring-tx-4.3.6.RELEASE.jar"/>
+	<classpathentry kind="lib" path="C:/Users/1643216/Desktop/Structures de données/App Projet IoC/projet-ioc-2018-Mezeeh/OutilSeisme/lib/spring/spring-web-4.3.6.RELEASE.jar"/>
+	<classpathentry kind="lib" path="C:/Users/1643216/Desktop/Structures de données/App Projet IoC/projet-ioc-2018-Mezeeh/OutilSeisme/lib/spring/spring-webmvc-4.3.6.RELEASE.jar"/>
+	<classpathentry kind="lib" path="C:/Users/1643216/Desktop/Structures de données/App Projet IoC/projet-ioc-2018-Mezeeh/OutilSeisme/lib/spring/spring-webmvc-portlet-4.3.6.RELEASE.jar"/>
+	<classpathentry kind="lib" path="C:/Users/1643216/Desktop/Structures de données/App Projet IoC/projet-ioc-2018-Mezeeh/OutilSeisme/lib/spring/spring-websocket-4.3.6.RELEASE.jar"/>
+	<classpathentry kind="lib" path="C:/Users/1643216/Desktop/Structures de données/App Projet IoC/projet-ioc-2018-Mezeeh/OutilSeisme/lib/logging/commons-logging-1.2.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
