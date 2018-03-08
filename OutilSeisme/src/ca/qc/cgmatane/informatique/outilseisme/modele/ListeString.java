@@ -86,8 +86,9 @@ public class ListeString {
 		return null;
 	}
 
+	VisiteurString visiteur = null;
 	public ListeString.VisiteurString getVisiteur(){
-		return new VisiteurString(this.tete);
+		return visiteur == null ? visiteur = new VisiteurString(this.tete) : visiteur;
 	}
 
 	public class VisiteurString implements Visitable{

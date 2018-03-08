@@ -1,11 +1,18 @@
 package ca.qc.cgmatane.informatique.outilseisme.vue;
 
-import java.awt.Button;
+import javafx.scene.control.Button;
+
+import java.util.Iterator;
 import java.util.List;
+
+import javax.lang.model.element.Element;
 
 import ca.qc.cgmatane.informatique.outilseisme.action.Controleur;
 import ca.qc.cgmatane.informatique.outilseisme.modele.ListeString;
+import ca.qc.cgmatane.informatique.outilseisme.modele.ListeString.VisiteurString;
 import javafx.application.Application;
+import javafx.event.ActionEvent;
+import javafx.event.EventHandler;
 import javafx.scene.Scene;
 import javafx.scene.control.Tab;
 import javafx.scene.control.TabPane;
@@ -25,15 +32,20 @@ public class OutilSeismeVue extends Application{
 	protected Tab[] onglet = new Tab[6];
 	protected Controleur controleur;
 	protected TextFlow[] textesFlow = new TextFlow[6];
+	
+	protected Button boutonSuivant;
+	protected VBox contenuPageMondiale;
 
 	@Override
 	public void start(Stage scenePrincipal){
 		onglets = new TabPane();
 		for(int compteurOnglet = 0; compteurOnglet < onglet.length; compteurOnglet++)
 			onglet[compteurOnglet] = new Tab();
-		// TEMP
+		
 		for(int compteurTextesFlow = 0; compteurTextesFlow < onglet.length; compteurTextesFlow++)
 			textesFlow[compteurTextesFlow] = new TextFlow();
+
+		contenuPageMondiale = new VBox();
 
 		scenePrincipal.setScene(new Scene(onglets, largeurFenetre, hauteurFenetre));
 		scenePrincipal.setTitle(nomFenetre);
@@ -50,19 +62,38 @@ public class OutilSeismeVue extends Application{
 	}
 
 	public void afficherListe(ListeString liste, int page){
-		/*for(int index = 0; index < liste.getTaille(); index++)
-			textesFlow[page].getChildren().add(new Text(liste.rechercher(index) + "\n"));*/
-
 		ListeString.VisiteurString visiteur = liste.getVisiteur();
-
-		while(!visiteur.estFini()){
+		
+		textesFlow[page].getChildren().clear();
+		
+		if(textesFlow[page].getChildren().size() < 20 && visiteur.estFini())
+			boutonSuivant.setDisable(true);
+		
+		int compteur = 0;
+		while (!visiteur.estFini() && compteur != 20) {
 			textesFlow[page].getChildren().add(new Text(visiteur.visiterSuivant() + "\n"));
-		}
-
-		onglet[page].setContent(textesFlow[page]);
+			compteur++;
+		}		
+		
+		if(page == 0) {
+			contenuPageMondiale.getChildren().add(textesFlow[page]);
+			ajouterBouton();
+			onglet[page].setContent(contenuPageMondiale);
+		} 
+		else
+			onglet[page].setContent(textesFlow[page]);
 	}
-
-	public void afficherPagination(List<Integer> listeNumeros){
-
+	
+	protected void ajouterBouton() {
+		boutonSuivant = new Button("Suivant");
+		boutonSuivant.setOnAction(
+				new EventHandler<ActionEvent>( ){
+					@Override
+					public void handle(ActionEvent event){
+						controleur.chargerNouvellePage();
+					}
+				}
+			);
+		contenuPageMondiale.getChildren().add(boutonSuivant);
 	}
 }

@@ -7,6 +7,7 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 import ca.qc.cgmatane.informatique.outilseisme.dao.SeismeDAO;
 import ca.qc.cgmatane.informatique.outilseisme.modele.ListeDeVilles;
+import ca.qc.cgmatane.informatique.outilseisme.modele.ListeString;
 import ca.qc.cgmatane.informatique.outilseisme.modele.Mondial;
 import ca.qc.cgmatane.informatique.outilseisme.modele.Ville;
 import ca.qc.cgmatane.informatique.outilseisme.vue.OutilSeismeVue;
@@ -18,6 +19,7 @@ public class Controleur {
 	protected ListeDeVilles listeDeVilles;
 	protected Mondial mondial;
 	protected List<Ville> tableauVille ;
+	protected ListeString informationsMondial;
 
 	public Controleur(OutilSeismeVue vue){
 		this.vue = vue;
@@ -30,7 +32,8 @@ public class Controleur {
 
 		mondial = new Mondial();
 		vue.afficherMenu(mondial.getNom(), 0);
-		vue.afficherListe(seismeDAO.rechercherInformationMondial(), 0);
+		informationsMondial = seismeDAO.rechercherInformationMondial();
+		vue.afficherListe(informationsMondial, 0);
 		
 		tableauVille = listeDeVilles.getListeVilles();
 
@@ -38,5 +41,9 @@ public class Controleur {
 			vue.afficherMenu(tableauVille.get(indexVille).getNom().toString(), indexVille + 1);
 			vue.afficherListe(seismeDAO.rechercherInformationsVille(tableauVille.get(indexVille).getNom().toString()), indexVille + 1);
 		}
+	}
+
+	public void chargerNouvellePage() {
+		vue.afficherListe(informationsMondial, 0);
 	}
 }
